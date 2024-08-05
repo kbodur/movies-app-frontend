@@ -1,0 +1,21 @@
+:root {
+    padding: 20px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.proprofs.com%2Fquiz-school%2Fstory.php%3Ftitle%3Dthe-ultimate-movie-logo-quiz&psig=AOvVaw0J2dp6FKPadrlpAimwXOrZ&ust=1722905758771000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKDX7trS3IcDFQAAAAAdAAAAABAE);
+    background-repeat: no-repeat;
+    background-size:contain;
+  
+}
+body {
+    padding: 20px;
+    width: 40vw;
+    height: 80vh;
+    border: 1px solid black;
+}
