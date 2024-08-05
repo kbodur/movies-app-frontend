@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
 
-const MoviesDetails = () => {
+const Movies = () => {
     const { user_id } = useParams();
     const [movies, setMovies] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -41,7 +41,7 @@ const MoviesDetails = () => {
                         <li key={movie.id}>
                             <Link to={`/users/${user_id}/movies/${movie.id}`}>
                                 <img src={movie.poster_url} />
-                                <h3>{movie.title}</h3>
+                                {/* <h3>{movie.title}</h3> */}
                             </Link>
                         </li>
                     ))}
@@ -53,4 +53,4 @@ const MoviesDetails = () => {
     );
 };
 
-export default MoviesDetails;
+export default Movies;
