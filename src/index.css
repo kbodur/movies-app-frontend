@@ -13,7 +13,7 @@
     background-size:contain;
   
 }
-.Home{
+.Home, .Show{
     border-radius: 20px;
     text-align: center;
     justify-content: center;
@@ -48,4 +48,56 @@ button:hover {
     background:linear-gradient(217deg, rgba(46, 46, 157, 0.8), rgba(9, 51, 167, 0) 70.71%),
     linear-gradient(127deg, rgba(50, 119, 122, 0.8), rgba(19, 60, 174, 0) 70.71%),
     linear-gradient(336deg, rgba(6, 6, 116, 0.8), rgba(0,0,255,0) 70.71%);
+}
+.movies-list ul {
+    list-style: none;
+    padding: 0;
+   
+}
+
+.movies-list li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid black;
+    width: auto;
+    font-size: 8px;
+}
+
+.movies-list img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.movies-list img:hover {
+    transform: scale(1.05);
+}
+
+.movies-list h3 {
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.movie-detail img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.movie-detail h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.movie-detail p {
+    margin: 5px 0;
 }

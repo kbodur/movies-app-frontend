@@ -1,16 +1,11 @@
 // DEPENDENCIES
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// PAGES
-// import Edit from "./Pages/Edit";
 import FourOFour from "./Pages/Four0Four";
 import Home from "./Pages/Home";
 import CreateAccount from "./Pages/CreateAccount";
-// import Index from "./Pages/Index";
-// import New from "./Pages/New";
-// import Show from "./Pages/Show";
-// import Songs from "./Components/Songs"
-// import NavBar from "./Components/NavBar";
+import Show from "./Pages/Show";
+import MovieDetailPage from "./components/MovieDetailPage";
 
 function App() {
     return (
@@ -22,6 +17,8 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="*" element={<FourOFour />} />
                         <Route path="/create-account" element={<CreateAccount />} />
+                        <Route path="/users/:user_id/movies" element={<Show />} />
+                        <Route path="/users/:user_id/movies/:movie_id" element={<MovieDetailPage />} />
                     </Routes>
                 </main>
             </Router>
