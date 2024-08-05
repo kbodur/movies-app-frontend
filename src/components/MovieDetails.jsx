@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import Footer from './Footer';
 
 const MovieDetails = () => {
     const { user_id, movie_id } = useParams();
@@ -57,11 +58,9 @@ const MovieDetails = () => {
                 ) : (
                     <p>No reviews available.</p>
                 )}
-
-                <Link to={`/users/${user_id}/movies`}>
-                    <button>Back to Movies List</button>
-                </Link>
+                <Footer />
             </div>
+
         </div>
 
     );

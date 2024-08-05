@@ -1,20 +1,21 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link, useParams } from 'react-router-dom';
 
 const Footer = () => {
+    const { user_id } = useParams();
     return (
-        <div>
-            <div className='index'>
-                <Link to={`/users/${user_id}/movies`}>
-                </Link><button>Index</button></div>
-            <div className='search'>
-                <Link to={`/users/${user_id}/movies`}>
-                </Link>Search</div>
-            <div className='profile'>
-                <Link to={`/users/${user_id}`}>
-                </Link>Profile</div>
+        <div className='footer'>
+            <div className='footer-box'>
+                <Link to={`/users/${user_id}/movies`}>Index</Link>
+            </div>
+            <div className='footer-box'>
+                <Link to={`/users/${user_id}/search`}>Search</Link>
+            </div>
+            <div className='footer-box'>
+                <Link to={`/users/${user_id}`}>Profile</Link>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

@@ -6,7 +6,8 @@ import Home from "./Pages/Home";
 import CreateAccount from "./Pages/CreateAccount";
 import Index from "./Pages/Index";
 import MovieDetails from "./components/MovieDetails";
-
+import Profile from "./components/Profile";
+import Search from "./components/Search";
 function App() {
     return (
         <div className="App">
@@ -19,6 +20,9 @@ function App() {
                         <Route path="/create-account" element={<CreateAccount />} />
                         <Route path="/users/:user_id/movies" element={<Index />} />
                         <Route path="/users/:user_id/movies/:movie_id" element={<MovieDetails />} />
+                        <Route path="/search" element={<Search />} />
+                        <Route path="//users/:user_id" element={<Profile />} />
+
                     </Routes>
                 </main>
             </Router>
