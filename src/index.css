@@ -13,9 +13,27 @@
     background-size:contain;
   
 }
-body {
+.Home{
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
     padding: 20px;
     width: 40vw;
     height: 80vh;
     border: 1px solid black;
+    background:linear-gradient(217deg, rgba(46, 46, 157, 0.8), rgba(9, 51, 167, 0) 70.71%),
+    linear-gradient(127deg, rgba(50, 119, 122, 0.8), rgba(19, 60, 174, 0) 70.71%),
+    linear-gradient(336deg, rgba(6, 6, 116, 0.8), rgba(0,0,255,0) 70.71%);
+}
+
+button{
+  background-color: transparent;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+    box-shadow: 0 6px 8px rgba(231, 219, 219, 0.15);
 }
