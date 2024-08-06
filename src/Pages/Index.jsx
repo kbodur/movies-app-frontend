@@ -7,10 +7,11 @@ const Index = () => {
     const { user_id } = useParams();
     const [username, setUsername] = useState('');
     const API = import.meta.env.VITE_BASE_URL;
+
     useEffect(() => {
         const fetchUserData = async () => {
             try {
-                const response = await fetch(`${API}/${user_id}`);
+                const response = await fetch(`${API}/users/${user_id}`);
                 const data = await response.json();
                 console.log(data);
                 if (response.ok) {
@@ -28,10 +29,10 @@ const Index = () => {
         }
     }, [user_id]);
 
-
     return (
         <div className='Index'>
-            <h2>Welcome {username}'s</h2>
+            <img className='img' src="/movies.jpeg" />
+            <h2>Welcome {username}</h2>
             <Movies />
             <Footer />
         </div>

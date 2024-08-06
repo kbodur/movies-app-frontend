@@ -12,7 +12,7 @@ const Login = ({ setUser }) => {
         event.preventDefault();
         setError("");
         try {
-            const response = await fetch(`${API}/login`, {
+            const response = await fetch(`${API}/users/login`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -21,6 +21,7 @@ const Login = ({ setUser }) => {
             });
             const data = await response.json();
             if (response.ok) {
+                console.log(data);
                 setUser(data.user);
                 navigate(`/users/${data.user.id}/movies`);
             } else {
@@ -34,6 +35,7 @@ const Login = ({ setUser }) => {
 
     return (
         <div className="login-page">
+            <img className='img' src="/movies.jpeg" alt="Movies Background" />
             <form onSubmit={handleLogin}>
                 <label>
                     Username:
@@ -61,9 +63,21 @@ const Login = ({ setUser }) => {
                     />
                 </label>
                 <br />
+                <br />
                 <button type="submit">Login</button>
+
                 {error && <p style={{ color: 'red' }}>{error}</p>}
             </form>
+            <br />
+            <br />
+            <a href="https://accounts.google.com/signin/v2/identifier" target="_blank" rel="noopener noreferrer">
+                <button>Login with Google</button>
+            </a><br />
+            <a href="https://www.facebook.com/login" target="_blank" rel="noopener noreferrer">
+                <button>Login with Facebook</button>
+            </a>
+
+
         </div>
     );
 };

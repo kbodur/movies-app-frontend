@@ -1,4 +1,5 @@
-import Login from "./Login";
+
+import { Link } from "react-router-dom";
 
 function Home() {
     return (
@@ -6,9 +7,8 @@ function Home() {
             <img src="../movies.jpeg" />
             <h2>Hello</h2>
             <h3>This is the Movie app!</h3>
-            <Login /><br />
-            <button><a href="https://www.google.com" />Login with Google</button><br />
-            <button><a href="https://www.facebook.com" />Login with Facebook</button>
+            <Link to={'/users/login'}> <button>Login</button> </Link>
+            <Link to={'/create-account'}> <button>Create Account</button> </Link>
 
         </div>
 

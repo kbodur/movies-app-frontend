@@ -13,7 +13,18 @@
     background-size:contain;
   
 }
-.Home, .Index, .Profile, .Search{
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.Home, .Index, .Profile, .Search, .login-page, .Edit-page, .New{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
     text-align: center;
     justify-content: center;
@@ -25,6 +36,7 @@
     background:linear-gradient(217deg, rgba(46, 46, 157, 0.8), rgba(9, 51, 167, 0) 70.71%),
     linear-gradient(127deg, rgba(50, 119, 122, 0.8), rgba(19, 60, 174, 0) 70.71%),
     linear-gradient(336deg, rgba(6, 6, 116, 0.8), rgba(0,0,255,0) 70.71%);
+   
 }
 
 button{
@@ -53,13 +65,13 @@ button:hover {
 .movies-list ul {
     list-style: none;
     padding: 0;
+    
    
 }
 
 .movies-list li {
     display: inline-block;
     text-align: center;
-    border: 1px solid black;
     width: auto;
     font-size: 8px;
 }
@@ -78,22 +90,77 @@ button:hover {
 .movies-list h3 {
     font-size: 0.1rem;
 }
+
+
 .movie-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: tomato;
-}
-.movie-background {
+    position: relative;
+    color: white; 
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .movie-background {
     background-size: cover;
     background-position: center;
-    height: 80vh; 
-    width: 30vw;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
     position: relative;
-    border-radius: 20px;
-
-}
+  }
+  
+  .movie-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+  }
+  
+  .movie-background h2,
+  .movie-background p,
+  .movie-background button,
+  .movie-background ul,
+  .movie-background .footer {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+  
+  .movie-background button {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .movie-background button:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
+  }
+  
+  .movie-background ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .movie-background li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  
+  .footer {
+    position: relative;
+    z-index: 1;
+  }
+  
 .footer {
     display: flex;
     justify-content: space-around;
@@ -123,4 +190,83 @@ button:hover {
 
 .footer-box a:hover {
     color: #007bff;
+}
+
+
+.Profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  
+  .profile-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  
+  .image {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+ 
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+
+  .profile-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+
+  .profile-info strong {
+    color: #333;
+  }
+  
+
+  .logout-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+
+  .logout-button:hover {
+    background-color: #c82333;
+  }
+  
+  .movie-background {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.img{
+    width: 20vw;
+    height: 20vh;
 }
