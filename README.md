@@ -2,6 +2,8 @@
 
 This is a React-based movie app that allows users to create an account, log in, view, search, and manage movies.
 My live url[https://euphonious-croissant-a7c8db.netlify.app/]
+Trello [https://trello.com/b/du7tkqcp/movies-app]
+Backend live url[https://movie-app-backend-1-jmf8.onrender.com/]
 ## Table of Contents
 
 - [Installation](#installation)
