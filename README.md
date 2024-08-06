@@ -1,7 +1,7 @@
 # Movie App
 
 This is a React-based movie app that allows users to create an account, log in, view, search, and manage movies.
-
+My live url(https://euphonious-croissant-a7c8db.netlify.app/)
 ## Table of Contents
 
 - [Installation](#installation)
