@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import Footer from './Footer';
+import Review from './Review';
+import ReviewEditForm from './ReviewEditForm';
 
 const MovieDetails = () => {
     const { user_id, movie_id } = useParams();
@@ -8,6 +10,8 @@ const MovieDetails = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [review, setReview] = useState([])
+
+
 
     const API = import.meta.env.VITE_BASE_URL;
     let navigate = useNavigate();
@@ -57,7 +61,6 @@ const MovieDetails = () => {
     }, [user_id, movie_id]);
 
 
-
     if (loading) return <p>Loading...</p>;
     if (error) return <p>{error}</p>;
     if (!movie) return <p>Movie not found.</p>;
@@ -101,15 +104,14 @@ const MovieDetails = () => {
                     <ul>
                         {review.reviews.map((review, index) => (
                             <li key={index}>
-                                <p><strong>Rating:</strong> {review.rating}/10</p>
-                                <p><strong>Comment:</strong> {review.comment}</p>
+                                <Review review={review} />
+
                             </li>
                         ))}
                     </ul>
                 ) : (
                     <p>No reviews available.</p>
                 )}
-
                 <Footer />
             </div>
         </div>
