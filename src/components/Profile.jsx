@@ -42,7 +42,7 @@ const Profile = () => {
 
     return (
         <div className='Profile'>
-            <img className='img' src="../movies.jpeg" />
+            <img className='img' src="https://media.gettyimages.com/id/1244034031/vector/cinema-poster-with-cola-film-strip-and-clapper-vector.jpg?s=612x612&w=gi&k=20&c=8ClshQC50T-wPj6CPvnPnFq1Er6Fs8fbrreXWehvdgk=" />
             <h1>Profile</h1>
             <div className='profile-info'>
                 <img className='image' src={userData.profile_picture} alt={`${userData.username}'s profile`} />
