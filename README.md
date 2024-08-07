@@ -6,7 +6,7 @@ Trello [https://trello.com/b/du7tkqcp/movies-app]
 Backend live url[https://movie-app-backend-1-jmf8.onrender.com/]
 <br/>
 <p align="center">
-    <img width="80%" src="/public/home.jpeg">
+    <img width="30%" src="/public/home.jpeg">
 </p>
 <br/>
 
@@ -21,7 +21,7 @@ Backend live url[https://movie-app-backend-1-jmf8.onrender.com/]
 - [Environment Variables](#environment-variables)
 <br/>
 <p align="center">
-    <img width="80%" src="/public/index.jpeg">
+    <img width="30%" src="/public/index.jpeg">
 </p>
 <br/>
 
@@ -39,7 +39,7 @@ npm install
 npm start
 <br/>
 <p align="center">
-    <img width="80%" src="/public/show.jpeg">
+    <img width="30%" src="/public/show.jpeg">
 </p>
 <br/>
 ## Usage
@@ -58,7 +58,7 @@ npm run preview: Serves the production build locally.
 
 <br/>
 <p align="center">
-    <img width="80%" src="/public/search.jpeg">
+    <img width="30%" src="/public/search.jpeg">
 </p>
 <br/>
 ## Components and Pages
@@ -91,7 +91,7 @@ Provides a search functionality for movies by title. Displays search results wit
 
 <br/>
 <p align="center">
-    <img width="80%" src="/public/profile.jpeg">
+    <img width="30%" src="/public/profile.jpeg">
 </p>
 <br/>
  ## Contributing
