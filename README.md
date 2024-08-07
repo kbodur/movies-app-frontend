@@ -4,6 +4,12 @@ This is a React-based movie app that allows users to create an account, log in, 
 My live url[https://euphonious-croissant-a7c8db.netlify.app/]
 Trello [https://trello.com/b/du7tkqcp/movies-app]
 Backend live url[https://movie-app-backend-1-jmf8.onrender.com/]
+<br/>
+<p align="center">
+    <img width="80%" src="/public/home.jpeg">
+</p>
+<br/>
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -13,12 +19,17 @@ Backend live url[https://movie-app-backend-1-jmf8.onrender.com/]
 - [Pages](#pages)
 - [Styling](#styling)
 - [Environment Variables](#environment-variables)
+<br/>
+<p align="center">
+    <img width="80%" src="/public/index.jpeg">
+</p>
+<br/>
 
 ## Installation
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/movie-app-frontend.git
+   git clone https://github.com/kbodur/movies-app-frontend.git
    cd movie-app-frontend
 ## Install dependencies:
 npm install
@@ -26,7 +37,11 @@ npm install
 
 ## Start the development server:
 npm start
-
+<br/>
+<p align="center">
+    <img width="80%" src="/public/show.jpeg">
+</p>
+<br/>
 ## Usage
 Running the App;
 npm run dev
@@ -40,6 +55,12 @@ src/index.js: The entry point for the React application.
 npm run dev: Starts the development server.
 npm run build: Builds the app for production.
 npm run preview: Serves the production build locally.
+
+<br/>
+<p align="center">
+    <img width="80%" src="/public/search.jpeg">
+</p>
+<br/>
 ## Components and Pages
  1.Footer
 A footer component that includes navigation links for the user's movies, search, and profile pages.
@@ -68,6 +89,11 @@ Allows users to edit an existing review for a movie. Sends a PUT request to upda
  9.Search
 Provides a search functionality for movies by title. Displays search results with links to movie details.
 
+<br/>
+<p align="center">
+    <img width="80%" src="/public/profile.jpeg">
+</p>
+<br/>
  ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request if you have any improvements or bug fixes.
 
